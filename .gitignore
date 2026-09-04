@@ -1,0 +1,18 @@
+# OS / System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment and sensitive data
+.env
+*.env
+*.pem
+*.key
+
+# Editor folders
+.vscode/
+.idea/
+
+# Node modules / log files (if any in future)
+node_modules/
+*.log

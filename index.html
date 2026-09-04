@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Ahmed Sayed Amroon | Software Engineer &amp; Flutter Developer</title>
+    <meta name="title" content="Ahmed Sayed Amroon | Software Engineer &amp; Flutter Developer">
+    <meta name="description"
+        content="Professional portfolio of Ahmed Sayed Amroon, Software Engineer and Flutter Developer. Building modern, scalable, and responsive mobile applications using Flutter and Firebase.">
+    <meta name="keywords"
+        content="Ahmed Sayed Amroon, Flutter Developer, Software Engineer, Dart, Firebase, Bloc, Clean Architecture, Mobile App Development, Portfolio, Responsive UI, SQLite">
+    <meta name="author" content="Ahmed Sayed Amroon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ahmedsayed.dev/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedsayed.dev/">
+    <meta property="og:title" content="Ahmed Sayed Amroon | Software Engineer &amp; Flutter Developer">
+    <meta property="og:description"
+        content="Building modern, scalable, and responsive mobile applications using Flutter and Firebase. Check out my projects and skills.">
+    <meta property="og:image" content="assets/icons/favicon.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ahmedsayed.dev/">
+    <meta property="twitter:title" content="Ahmed Sayed Amroon | Software Engineer &amp; Flutter Developer">
+    <meta property="twitter:description"
+        content="Building modern, scalable, and responsive mobile applications using Flutter and Firebase. Check out my projects and skills.">
+    <meta property="twitter:image" content="assets/icons/favicon.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Custom Preloader -->
+    <div id="preloader" class="preloader" aria-hidden="true">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text">Loading portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgress" aria-hidden="true"></div>
+    </div>
+
+    <!-- Floating Background Glowing Blobs -->
+    <div class="floating-blobs-container" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24"
+            height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- Navigation Header -->
+    <header class="sticky-header" id="mainHeader">
+        <div class="nav-wrapper container">
+            <a href="#hero" class="brand-logo" aria-label="Ahmed Sayed Amroon portfolio homepage">
+                ASA<span class="logo-dot">.</span>
+            </a>
+
+            <nav class="nav-links-wrapper" aria-label="Primary Navigation">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-controls">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                    <!-- Sun Icon (visible in light mode) -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" width="22" height="22">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+                    <!-- Moon Icon (visible in dark mode) -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" width="22" height="22">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </button>
+
+                <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="navMenu"
+                    aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section flex-center">
+            <div class="container hero-grid">
+                <div class="hero-text-content">
+                    <span class="hero-greeting animate-reveal">Hello, I'm</span>
+                    <h1 class="hero-name animate-reveal">Ahmed Sayed Amroon</h1>
+                    <div class="hero-title-container animate-reveal">
+                        <span class="hero-static-title">I build </span>
+                        <span class="hero-dynamic-title" id="typingTarget"></span>
+                        <span class="typing-cursor" aria-hidden="true">|</span>
+                    </div>
+                    <p class="hero-tagline animate-reveal">
+                        Building modern, scalable, and responsive mobile applications using Flutter and Firebase.
+                    </p>
+                </div>
+
+                <!-- Abstract Developer themed visual graphic (No profile image used) -->
+                <div class="hero-visual-content flex-center animate-reveal">
+                    <div class="abstract-canvas">
+                        <!-- Simulated Mobile Screen -->
+                        <div class="phone-frame glass-panel">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <!-- Simulated Flutter App Widget tree -->
+                                <div class="phone-header flex-center">
+                                    <div class="phone-dot"></div>
+                                    <span class="phone-title">Flutter App</span>
+                                </div>
+                                <div class="phone-body">
+                                    <div class="phone-widget widget-hero">
+                                        <div class="widget-graph">
+                                            <div class="bar bar-1"></div>
+                                            <div class="bar bar-2"></div>
+                                            <div class="bar bar-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-widget widget-row">
+                                        <div class="widget-circle"></div>
+                                        <div class="widget-line-container">
+                                            <div class="widget-line-short"></div>
+                                            <div class="widget-line-long"></div>
+                                        </div>
+                                    </div>
+                                    <div class="phone-widget widget-row">
+                                        <div class="widget-circle circle-alt"></div>
+                                        <div class="widget-line-container">
+                                            <div class="widget-line-short"></div>
+                                            <div class="widget-line-long"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-nav flex-center">
+                                    <div class="nav-item"></div>
+                                    <div class="nav-item active"></div>
+                                    <div class="nav-item"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges and Geometric abstract decorators -->
+                        <div class="floating-badge badge-flutter glass-panel flex-center floating-anim-1">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M14.3 2.3L5 11.6l3.7 3.7 9.3-9.3zM18.7 18.7l-3.7 3.7-5.6-5.6 5.6-5.6z" />
+                            </svg>
+                            <span>Flutter</span>
+                        </div>
+
+                        <div class="floating-badge badge-firebase glass-panel flex-center floating-anim-2">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="#FFA611">
+                                <path
+                                    d="M3.89 15.67L5.26 6.8a.46.46 0 0 1 .8-.25l2.45 2.45L12 3.64a.46.46 0 0 1 .83 0l8.28 15.58a.46.46 0 0 1-.68.6l-5.75-3.32-3.14-5.83-2.07 2.07a.46.46 0 0 0 0 .65l5.05 5.05c.34.34.1.92-.38.92H4.46a.46.46 0 0 1-.57-.65z" />
+                            </svg>
+                            <span>Firebase</span>
+                        </div>
+
+                        <div class="floating-badge badge-bloc glass-panel flex-center floating-anim-3">
+                            <span class="badge-text-icon">{B}</span>
+                            <span>Bloc</span>
+                        </div>
+
+                        <div class="abstract-circle circle-purple"></div>
+                        <div class="abstract-circle circle-blue"></div>
+                        <div class="grid-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator flex-center" aria-label="Scroll down to About section">
+                <span class="indicator-mouse">
+                    <span class="indicator-wheel"></span>
+                </span>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content-grid">
+                    <div class="about-text-wrapper">
+                        <h3 class="about-lead">
+                            Passionate Software Engineer &amp; Flutter Developer dedicated to crafting high-performance
+                            mobile applications.
+                        </h3>
+                        <p class="about-description">
+                            I'm a goal-oriented software engineer specializing in cross-platform mobile ecosystem
+                            development. With a deep foundation in computer systems engineering and a focus on the
+                            **Flutter &amp; Dart** framework, he bridges complex business demands with simple, elegant
+                            user experiences.
+                        </p>
+                        <p class="about-description">
+                            My workflow is anchored around standard engineering patterns like **Clean Architecture**,
+                            state-management frameworks (Bloc, Cubit, Provider), and cloud backend integrations. I'm
+                            committed to writing dry, well-documented, test-driven code, ensuring that the applications
+                            scale seamlessly as user bases grow.
+                        </p>
+                        <div class="about-details-list">
+                            <div class="details-item">
+                                <span class="details-label">Role:</span>
+                                <span class="details-value">Mobile Application Specialist</span>
+                            </div>
+                            <div class="details-item">
+                                <span class="details-label">Frameworks:</span>
+                                <span class="details-value">Flutter, Dart, Firebase</span>
+                            </div>
+                            <div class="details-item">
+                                <span class="details-label">Architecture:</span>
+                                <span class="details-value">Clean Architecture, BLoC, Cubit</span>
+                            </div>
+                            <div class="details-item">
+                                <span class="details-label">Database:</span>
+                                <span class="details-value">Firestore, Hive, SharedPreferences</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats-panel glass-panel flex-center">
+                        <div class="stats-item">
+                            <span class="stats-num">16+</span>
+                            <span class="stats-label">Core Technologies</span>
+                        </div>
+                        <div class="stats-item">
+                            <span class="stats-num">2+</span>
+                            <span class="stats-label">Production Apps</span>
+                        </div>
+                        <div class="stats-item">
+                            <span class="stats-num">100%</span>
+                            <span class="stats-label">Responsive Designs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding alt-bg-section scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Capabilities</span>
+                    <h2 class="section-title">Professional Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Flutter -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dart -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Firebase -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Firebase</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- REST API -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">REST API Integration</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bloc -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Bloc (State Management)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cubit -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Cubit</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Provider -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Provider</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Git -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Git Version Control</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GitHub -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">GitHub Collaboration</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SQLite -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Hive & SharedPref Database</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Responsive Design -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Responsive Design (UI/UX)</span>
+                                <span class="skill-percent">94%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Clean Architecture -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Clean Architecture (Solid)</span>
+                                <span class="skill-percent">89%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dio -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Dio Http Client</span>
+                                <span class="skill-percent">87%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Postman -->
+                    <div class="skill-card glass-panel" tabindex="0">
+                        <div class="skill-info">
+                            <div class="skill-header">
+                                <span class="skill-name">Postman API Testing</span>
+                                <span class="skill-percent">86%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-percentage="86%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Professional Services</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Flutter App Development -->
+                    <div class="service-card glass-panel flex-center" tabindex="0">
+                        <div class="service-icon-bg flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Flutter App Development</h3>
+                        <p class="service-card-desc">
+                            End-to-end engineering of modern, lightweight, and high-performance native iOS and Android
+                            apps using the Dart language and Flutter SDK. I follow standard clean architecture patterns
+                            to build responsive widgets.
+                        </p>
+                    </div>
+
+                    <!-- Service 2: Firebase Integration -->
+                    <div class="service-card glass-panel flex-center" tabindex="0">
+                        <div class="service-icon-bg flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Firebase Integration</h3>
+                        <p class="service-card-desc">
+                            Implementation of scalable backend infrastructures using Firebase solutions. This includes
+                            secure Firebase Auth, Firestore real-time queries, file uploads using Firebase Storage, and
+                            notifications via Cloud Messaging.
+                        </p>
+                    </div>
+
+                    <!-- Service 3: REST API Integration -->
+                    <div class="service-card glass-panel flex-center" tabindex="0">
+                        <div class="service-icon-bg flex-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="30" height="30">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">REST API Integration</h3>
+                        <p class="service-card-desc">
+                            Structuring API calls and caching systems. I use Dio and Retrofit with robust serialization
+                            configurations, custom interceptors, automated token refreshes, local SQLite databases, and
+                            structured exception handling pipelines.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding alt-bg-section scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Showcase</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Etmaan Application -->
+
+                    <article class="project-card glass-panel" tabindex="0">
+                        <div class="project-content">
+
+                            <div class="project-header">
+                                <h3 class="project-title">Etmaan</h3>
+                                <span class="project-category-badge">Islamic App</span>
+                            </div>
+
+                            <p class="project-description">
+                                A modern offline-first Islamic app built with Flutter for Quran, Azkar, Tasbeeh, prayer
+                                times, and Qibla.
+                            </p>
+
+                            <h4 class="features-label">Key Features:</h4>
+                            <ul class="project-features">
+                                <li>📖 Quran &amp; reading tracking</li>
+                                <li>🤲 Azkar &amp; progress tracking</li>
+                                <li>📿 Tasbeeh &amp; statistics</li>
+                                <li>🕌 Prayer times &amp; Qibla</li>
+                                <li>🔔 Notifications &amp; Adhan</li>
+                                <li>🌙 Dark Mode &amp; daily goals</li>
+                            </ul>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Cubit / Bloc</span>
+                                <span class="tech-tag">SharedPreferences</span>
+                                <span class="tech-tag">Geolocator</span>
+                                <span class="tech-tag">Adhan Dart</span>
+                                <span class="tech-tag">Local Notifications</span>
+                                <span class="tech-tag">PDF Viewer</span>
+                                <span class="tech-tag">Clean Architecture</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/ahmedsayed744/etmaan"
+                                    class="btn secondary-btn project-git-btn glow-effect" target="_blank" rel="noopener"
+                                    aria-label="View Etmaan on GitHub">
+
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path
+                                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                    </svg>
+
+                                    <span>GitHub</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </article>
+                    <!-- Project 2: Medico -->
+                    <article class="project-card glass-panel" tabindex="0">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Hungry</h3>
+                                <span class="project-category-badge">Food Delivery</span>
+                            </div>
+                            <p class="project-description">
+                                A complete and professional food delivery application with a modern and attractive
+                                interface, featuring a comprehensive food menu, shopping cart, order management,
+                                and user authentication. The application includes various features to enhance the user
+                                experience, such as filtering, search, product details, and secure payment integration.
+                            </p>
+                            <h4 class="features-label">Key Features:</h4>
+                            <ul class="project-features">
+                                <li>Food Delivery System </li>
+                                <li>Online Payment</li>
+                                <li>Order Management</li>
+                                <li>User Authentication</li>
+                            </ul>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Bloc</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedsayed744/resturantapp"
+                                    class="btn secondary-btn project-git-btn glow-effect" target="_blank" rel="noopener"
+                                    aria-label="View Hungry on GitHub">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                        <path
+                                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Walletix -->
+                    <article class="project-card glass-panel" tabindex="0">
+                        <div class="project-content">
+
+                            <div class="project-header">
+                                <h3 class="project-title">Walletix</h3>
+                                <span class="project-category-badge">Personal Finance</span>
+                            </div>
+
+                            <p class="project-description">
+                                A personal finance app for managing expenses, savings, budgets, and daily plans with
+                                smart reminders.
+                            </p>
+
+                            <h4 class="features-label">Key Features:</h4>
+
+                            <ul class="project-features">
+                                <li>Track income, expenses, and savings.</li>
+                                <li>Monthly budget and spending overview.</li>
+                                <li>Financial goals and monthly planning.</li>
+                                <li>Daily & monthly plans with reminders.</li>
+                                <li>Smart notifications for scheduled tasks.</li>
+                                <li>Spending insights and transaction history.</li>
+                                <li>Clean & scalable architecture.</li>
+                            </ul>
+
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">Clean Architecture</span>
+                                <span class="tech-tag">State Management</span>
+                                <span class="tech-tag">Local Notifications</span>
+                                <span class="tech-tag">Local Storage</span>
+                            </div>
+
+                            <div class="project-links">
+
+                                <a href="https://github.com/ahmedsayed744/wallApp"
+                                    class="btn secondary-btn project-git-btn glow-effect" target="_blank" rel="noopener"
+                                    aria-label="View Walletix on GitHub">
+
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+
+                                        <path
+                                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                                    </svg>
+
+                                    <span>GitHub</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item glass-panel" tabindex="0">
+                        <div class="timeline-badge flex-center">💼</div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h3 class="timeline-title">Flutter Developer</h3>
+                            <h4 class="timeline-subtitle">Software Engineer</h4>
+                            <p class="timeline-desc">
+                                Specialized in structuring and scaling consumer-facing mobile solutions. Focused on
+                                designing reusable layout paradigms, implementing state cycles with Bloc, and building
+                                cloud integration points via Firebase and custom REST interfaces. Refactored inherited
+                                systems into structured Clean Architecture blocks, boosting performance metrics and
+                                codebase stability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding alt-bg-section scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Academics</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-item glass-panel" tabindex="0">
+                        <div class="timeline-badge flex-center">🎓</div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Graduation Year: 2025</span>
+                            <h3 class="timeline-title">Faculty of Computer Science and Information Systems</h3>
+                            <p class="timeline-desc">
+                                Rigorous foundation in software design, algorithms, databases, data structures, and
+                                object-oriented systems programming, applying analytical concepts directly to mobile UI
+                                architectures and state management designs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding scroll-reveal-trigger">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-card glass-panel flex-center" tabindex="0" id="emailContactCard">
+                            <div class="contact-icon flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="22" height="22">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:ahmedlsayed45@gmail.com" class="contact-value"
+                                    id="emailContactLink">ahmedlsayed45@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel flex-center" tabindex="0">
+                            <div class="contact-icon flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="22" height="22">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+201151109167" class="contact-value">+20 115 110 9167</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-panel flex-center" tabindex="0">
+                            <div class="contact-icon flex-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="22" height="22">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Cairo, Egypt</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials glass-panel flex-center">
+                            <a href="https://www.linkedin.com/in/ahmed-sayed-47b739250" target="_blank" rel="noopener"
+                                class="social-icon-link flex-center" aria-label="Visit Ahmed Sayed LinkedIn profile">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ahmedsayed744" target="_blank" rel="noopener"
+                                class="social-icon-link flex-center" aria-label="Visit Ahmed Sayed GitHub profile">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/201151109167" target="_blank" rel="noopener"
+                                class="social-icon-link flex-center" aria-label="Visit Ahmed Sayed WhatsApp profile">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper glass-panel">
+                        <form id="contactForm" aria-label="Send a message to Ahmed">
+                            <input type="hidden" name="title" id="formTitle" value="Portfolio Inquiry">
+                            <div class="form-group">
+                                <input type="text" id="formName" name="name" class="form-control" placeholder=" "
+                                    required autocomplete="name">
+                                <label for="formName" class="form-label">Full Name</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="formEmail" name="email" class="form-control" placeholder=" "
+                                    required autocomplete="email">
+                                <label for="formEmail" class="form-label">Email Address</label>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="formMessage" name="message" class="form-control text-area" placeholder=" "
+                                    required></textarea>
+                                <label for="formMessage" class="form-label">Your Message</label>
+                            </div>
+
+                            <button type="submit" class="btn primary-btn submit-btn glow-effect">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" width="18" height="18">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                </svg>
+                            </button>
+
+                            <div id="formStatus" class="form-status-message" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content flex-center">
+            <p class="footer-copyright">&copy; <span id="currentYear"></span> Ahmed Sayed Amroon. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
